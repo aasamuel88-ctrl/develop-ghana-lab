@@ -1,15 +1,12 @@
-# Develop Ghana Blog
+# Develop Ghana Platform
 
-A modern tech blog and digital software store focused on Ghana's tech ecosystem, tutorials, innovation, and affordable digital tools.
+A modern SaaS platform for Ghana tech blog and software marketplace.
 
-## 🚀 Live Site
-Visit: https://aasamuel88-ctrl.github.io/develop-ghana-blog/frontend/
+**Stack:** Next.js 15 + TypeScript + Supabase + Tailwind
 
-## Features
-- Clean modern design with Tailwind CSS
-- Fully responsive
-- Blog with search & filters
-- Digital product store
-- Contact form + WhatsApp integration
+## Setup
 
-Built for the Ghana tech community ❤️
+1. Clone the repo
+2. `npm install`
+3. Create Supabase project and add env vars
+4. `npm run dev`
