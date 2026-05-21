@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Develop Ghana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+
+  <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="text-4xl">🇬🇭</span>
+        <div>
+          <span class="text-3xl font-bold text-black">Develop</span>
+          <span class="text-3xl font-bold text-red-600">Ghana</span>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-lg">
+        <a href="blog.html" class="nav-link text-red-600">Blog</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-3xl"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <h1 class="text-5xl font-bold text-center mb-4">Develop Ghana Blog</h1>
+    <p class="text-center text-gray-600 mb-10">Tech insights, tutorials & innovation from Ghana</p>
+
+    <div class="flex flex-col md:flex-row gap-4 mb-10">
+      <input type="text" id="search-input" placeholder="Search articles..." class="flex-1 px-6 py-4 rounded-2xl border focus:outline-none focus:border-red-500">
+      <select id="category-filter" class="px-6 py-4 rounded-2xl border focus:outline-none">
+        <option value="">All Categories</option>
+        <option value="software">Software</option>
+        <option value="tutorial">Tutorials</option>
+        <option value="innovation">Innovation</option>
+        <option value="business">Business</option>
+      </select>
+    </div>
+
+    <div id="blog-grid" class="grid md:grid-cols-3 gap-8"></div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
