@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Develop Ghana - Tech Blog & Software Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="text-4xl">🇬🇭</span>
+        <div>
+          <span class="text-3xl font-bold text-black">Develop</span>
+          <span class="text-3xl font-bold text-red-600">Ghana</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-lg">
+        <a href="blog.html" class="nav-link hover:text-red-600 transition-colors">Blog</a>
+        <a href="shop.html" class="nav-link hover:text-red-600 transition-colors">Shop</a>
+        <a href="about.html" class="nav-link hover:text-red-600 transition-colors">About</a>
+        <a href="contact.html" class="nav-link hover:text-red-600 transition-colors">Contact</a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden text-3xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-gradient-to-br from-black via-gray-900 to-black text-white py-28">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+        Empowering Ghana Through<br><span class="text-yellow-400">Tech & Innovation</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+        Premium software, practical tutorials, and digital tools designed for Ghanaian businesses and creators.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-5 justify-center">
+        <a href="blog.html" class="btn-primary text-lg px-10 py-4 rounded-2xl">Explore Blog</a>
+        <a href="shop.html" class="btn-secondary text-lg px-10 py-4 rounded-2xl">Shop Software</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Blogs -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold text-center mb-12">Featured Stories</h2>
+    <div id="featured-blogs" class="grid md:grid-cols-3 gap-8"></div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Popular Software</h2>
+      <div id="featured-products" class="grid md:grid-cols-4 gap-8"></div>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-lg">&copy; 2026 Develop Ghana • Made for Ghana 🇬🇭</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
